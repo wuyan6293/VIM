@@ -179,3 +179,12 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
   nmap <leader>9 <Plug>AirlineSelectTab9
 
 nmap <silent> <leader>d <Plug>DashSearch
+
+
+" tagbar 开着会比较卡
+" TagBar {
+    if isdirectory(expand("~/.vim/bundle/tagbar/"))
+        nnoremap <silent> <leader>tt :TagbarOpenAutoClose<CR>
+    endif
+"}
+
