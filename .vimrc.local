@@ -39,7 +39,7 @@ if has("cscope")
     set csto=0
 
     " add any cscope database in current directory
-    cs add /Users/zhanlang/.cscope-db/C/cscope.out
+    " cs add /Users/zhanlang/.cscope-db/C/cscope.out
     if filereadable("cscope.out")
         cs add cscope.out  
     " else add the database pointed to by environment variable 
@@ -187,4 +187,9 @@ nmap <silent> <leader>d <Plug>DashSearch
         nnoremap <silent> <leader>tt :TagbarOpenAutoClose<CR>
     endif
 "}
+
+let NERDTreeIgnore=['\.vim$', '\~$', 'cscope\.', 'tags', '\.o$', '^\.']
+set mouse=i
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set cc=80
 
